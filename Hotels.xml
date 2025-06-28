@@ -135,4 +135,17 @@
     </Address>
   </Hotel>
 
+  <!-- 11. Grand Hyatt San Francisco  (newly added) -->
+  <Hotel Rating="4.3">
+    <Name>Grand Hyatt San Francisco</Name>
+    <Phone>415-398-1234</Phone>
+    <Address NearestAirport="SFO">
+      <Number>345</Number>
+      <Street>Stockton St</Street>
+      <City>San Francisco</City>
+      <State>CA</State>
+      <Zip>94108</Zip>
+    </Address>
+  </Hotel>
+
 </Hotels>
