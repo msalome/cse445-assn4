@@ -1,1 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  ✗ Root tag intentionally incorrect (Error #1)  -->
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="Hotels.xsd">
+
+  <!-- Westin (unchanged) -->
+  <Hotel Rating="4.2">
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- Hyatt Regency Phoenix – missing Rating (Error #2) -->
+  <Hotel>
+    <Name>Hyatt Regency Phoenix</Name>
+    <Phone>602-252-1234</Phone>
+    <Phone>877-803-7534</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>122</Number>
+      <Street>N 2nd St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- Renaissance Seattle – no Phone element (Error #3) -->
+  <Hotel Rating="4.3">
+    <Name>Renaissance Seattle Hotel</Name>
+    <Address NearestAirport="Sea‑Tac">
+      <Number>515</Number>
+      <Street>Madison St</Street>
+      <City>Seattle</City>
+      <State>WA</State>
+      <Zip>98104</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- Hilton Austin – Address closing tag omitted (Error #4) -->
+  <Hotel Rating="4.4">
+    <Name>Hilton Austin</Name>
+    <Phone>512-482-8000</Phone>
+    <Address NearestAirport="Austin‑Bergstrom">
+      <Number>500</Number>
+      <Street>E 4th St</Street>
+      <City>Austin</City>
+      <State>TX</State>
+      <Zip>78701</Zip>
+    <!-- </Address> intentionally missing -->
+  </Hotel>
+
+  <!-- Marriott Marquis – duplicate Name elements (Error #5) -->
+  <Hotel Rating="4.5">
+    <Name>Marriott Marquis Houston</Name>
+    <Name>Marriott Marquis Houston</Name>
+    <Phone>713-654-1777</Phone>
+    <Address>
+      <Number>1777</Number>
+      <Street>Walker St</Street>
+      <City>Houston</City>
+      <State>TX</State>
+      <Zip>77010</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- Remaining five hotels unchanged (still valid individually) -->
+  <Hotel Rating="4.0">
+    <Name>Sheraton New York Times Square Hotel</Name>
+    <Phone>212-581-1000</Phone>
+    <Address NearestAirport="JFK">
+      <Number>811</Number>
+      <Street>7th Ave</Street>
+      <City>New York</City>
+      <State>NY</State>
+      <Zip>10019</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.6">
+    <Name>Omni San Diego Hotel</Name>
+    <Phone>619-231-6664</Phone>
+    <Address>
+      <Number>675</Number>
+      <Street>L St</Street>
+      <City>San Diego</City>
+      <State>CA</State>
+      <Zip>92101</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.2">
+    <Name>Fairmont Chicago Millennium Park</Name>
+    <Phone>312-565-8000</Phone>
+    <Address NearestAirport="O'Hare">
+      <Number>200</Number>
+      <Street>N Columbus Dr</Street>
+      <City>Chicago</City>
+      <State>IL</State>
+      <Zip>60601</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.7">
+    <Name>The Ritz‑Carlton Denver</Name>
+    <Phone>303-312-3800</Phone>
+    <Phone>800-241-3333</Phone>
+    <Address NearestAirport="Denver Intl">
+      <Number>1881</Number>
+      <Street>Curtis St</Street>
+      <City>Denver</City>
+      <State>CO</State>
+      <Zip>80202</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.4">
+    <Name>Hotel Nikko San Francisco</Name>
+    <Phone>415-394-1111</Phone>
+    <Address>
+      <Number>222</Number>
+      <Street>Mason St</Street>
+      <City>San Francisco</City>
+      <State>CA</State>
+      <Zip>94102</Zip>
+    </Address>
+  </Hotel>
+
+</Hotel>
 
