@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hotels>
+
+  <Hotel>
+    <Name>Westin Tempe</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+    <Rating>4.2</Rating>
+  </Hotel>
+
+  <Hotel>
+    <Name>Tempe Mission Palms</Name>
+    <Phone>480-894-1400</Phone>
+    <Address NearestAirport="Phoenix Sky Harbor">
+      <Number>60</Number>
+      <Street>E Rio Salado Pkwy</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+    <!-- no Rating here -->
+  </Hotel>
+
+  <Hotel>
+    <Name>Arizona Mills Hotel</Name>
+    <Phone>480-921-4020</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>5000</Number>
+      <Street>W Rialto Rd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85282</Zip>
+    </Address>
+    <Rating>3.8</Rating>
+  </Hotel>
+
+  <Hotel>
+    <Name>Sheraton Grand Phoenix</Name>
+    <Phone>602-333-0000</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>340 North 3rd Street</Number>
+      <Street></Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+    <Rating>4.1</Rating>
+  </Hotel>
+
+  <Hotel>
+    <Name>Hyatt Regency Scottsdale</Name>
+    <Phone>480-348-1234</Phone>
+    <Address NearestAirport="Phoenix Sky Harbor">
+      <Number>7500</Number>
+      <Street>E Princess Blvd</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85255</Zip>
+    </Address>
+    <Rating>4.3</Rating>
+  </Hotel>
+
+  <Hotel>
+    <Name>Hilton Phoenix Resort</Name>
+    <Phone>480-800-1664</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>7677</Number>
+      <Street>N Scottsdale Rd</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85253</Zip>
+    </Address>
+    <Rating>4.0</Rating>
+  </Hotel>
+
+  <Hotel>
+    <Name>Embassy Suites by Hilton Phoenix</Name>
+    <Phone>602-859-2000</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>2630</Number>
+      <Street>East Thomas Road</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85016</Zip>
+    </Address>
+    <Rating>4.2</Rating>
+  </Hotel>
+
+  <Hotel>
+    <Name>Residence Inn Tempe Downtown/University</Name>
+    <Phone>480-968-1637</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>935</Number>
+      <Street>E University Dr</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel>
+    <Name>Fairfield Inn & Suites Tempe</Name>
+    <Phone>480-777-5555</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>1400</Number>
+      <Street>East Rio Salado Parkway</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+    <Rating>3.9</Rating>
+  </Hotel>
+
+  <Hotel>
+    <Name>La Quinta Inn & Suites Phoenix Tempe</Name>
+    <Phone>480-968-5200</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>1321</Number>
+      <Street>East Apache Blvd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+    <Rating>3.7</Rating>
+  </Hotel>
+
+</Hotels>
