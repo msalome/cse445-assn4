@@ -1,45 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           elementFormDefault="qualified">
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
 
-  <!-- root -->
+  <!-- ============================================================
+       Root element : <Hotels>
+       ============================================================ -->
   <xs:element name="Hotels">
     <xs:complexType>
       <xs:sequence>
+        <!-- ======================================================
+             Repeating element : <Hotel>
+             ====================================================== -->
         <xs:element name="Hotel" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
+              <!-- Name (exactly one) -->
+              <xs:element name="Name"   type="xs:string"/>
 
-              <xs:element name="Name" type="xs:string"/>
-              
-              <!-- zero‑to‑many Phone -->
-              <xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
+              <!-- Phone (one or many) -->
+              <xs:element name="Phone"  type="xs:string" maxOccurs="unbounded"/>
 
-              <!-- Address -->
+              <!-- =================================================
+                   Nested element : <Address>
+                   ================================================= -->
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="Number" type="xs:string"/>
                     <xs:element name="Street" type="xs:string"/>
-                    <xs:element name="City" type="xs:string"/>
-                    <xs:element name="State" type="xs:string"/>
-                    <xs:element name="Zip" type="xs:string"/>
+                    <xs:element name="City"   type="xs:string"/>
+                    <xs:element name="State"  type="xs:string"/>
+                    <xs:element name="Zip"    type="xs:string"/>
                   </xs:sequence>
 
-                  <!-- optional NearestAirport attribute -->
+                  <!-- Optional attribute -->
                   <xs:attribute name="NearestAirport" type="xs:string" use="optional"/>
                 </xs:complexType>
               </xs:element>
-
+              <!-- ===== end <Address> ===== -->
             </xs:sequence>
 
-            <!-- required Rating attribute on Hotel -->
+            <!-- Required attribute (present for every hotel) -->
             <xs:attribute name="Rating" type="xs:decimal" use="required"/>
           </xs:complexType>
         </xs:element>
+        <!-- ===== end <Hotel> ===== -->
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
+  <!-- ===== end <Hotels> ===== -->
 </xs:schema>
-
