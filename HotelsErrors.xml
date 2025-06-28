@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  ✗ Root tag intentionally incorrect (Error #1)  -->
+<!--  Five injected faults for Question 1.3
+     1. Wrong root element name  (Hotel  vs  Hotels)
+     2. One <Hotel> missing required Rating attribute
+     3. One <Hotel> missing Phone element(s)
+     4. One <Address> lacks a closing tag
+     5. One <Hotel> contains two <Name> elements
+-->
 <Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="Hotels.xsd">
+       xsi:noNamespaceSchemaLocation="https://msalome.github.io/cse445-assn4/Hotels.xsd">
 
-  <!-- Westin (unchanged) -->
+  <!-- Westin  (still valid individually) -->
   <Hotel Rating="4.2">
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
@@ -17,7 +23,7 @@
     </Address>
   </Hotel>
 
-  <!-- Hyatt Regency Phoenix – missing Rating (Error #2) -->
+  <!-- Hyatt Regency Phoenix  – Error #2: Rating attribute missing -->
   <Hotel>
     <Name>Hyatt Regency Phoenix</Name>
     <Phone>602-252-1234</Phone>
@@ -31,7 +37,7 @@
     </Address>
   </Hotel>
 
-  <!-- Renaissance Seattle – no Phone element (Error #3) -->
+  <!-- Renaissance Seattle  – Error #3: no Phone element -->
   <Hotel Rating="4.3">
     <Name>Renaissance Seattle Hotel</Name>
     <Address NearestAirport="Sea‑Tac">
@@ -43,7 +49,7 @@
     </Address>
   </Hotel>
 
-  <!-- Hilton Austin – Address closing tag omitted (Error #4) -->
+  <!-- Hilton Austin  – Error #4: closing </Address> intentionally removed -->
   <Hotel Rating="4.4">
     <Name>Hilton Austin</Name>
     <Phone>512-482-8000</Phone>
@@ -53,10 +59,10 @@
       <City>Austin</City>
       <State>TX</State>
       <Zip>78701</Zip>
-    <!-- </Address> intentionally missing -->
+    <!--  </Address>  ← removed on purpose -->
   </Hotel>
 
-  <!-- Marriott Marquis – duplicate Name elements (Error #5) -->
+  <!-- Marriott Marquis – Error #5: duplicate Name elements -->
   <Hotel Rating="4.5">
     <Name>Marriott Marquis Houston</Name>
     <Name>Marriott Marquis Houston</Name>
@@ -70,14 +76,14 @@
     </Address>
   </Hotel>
 
-  <!-- Remaining five hotels unchanged (still valid individually) -->
+  <!-- Remaining five hotels unchanged (still schema‑correct individually) -->
   <Hotel Rating="4.0">
     <Name>Sheraton New York Times Square Hotel</Name>
     <Phone>212-581-1000</Phone>
     <Address NearestAirport="JFK">
       <Number>811</Number>
-      <Street>7th Ave</Street>
-      <City>New York</City>
+      <Street>7th Ave</Street>
+      <City>New York</City>
       <State>NY</State>
       <Zip>10019</Zip>
     </Address>
@@ -88,8 +94,8 @@
     <Phone>619-231-6664</Phone>
     <Address>
       <Number>675</Number>
-      <Street>L St</Street>
-      <City>San Diego</City>
+      <Street>L St</Street>
+      <City>San Diego</City>
       <State>CA</State>
       <Zip>92101</Zip>
     </Address>
@@ -100,7 +106,7 @@
     <Phone>312-565-8000</Phone>
     <Address NearestAirport="O'Hare">
       <Number>200</Number>
-      <Street>N Columbus Dr</Street>
+      <Street>N Columbus Dr</Street>
       <City>Chicago</City>
       <State>IL</State>
       <Zip>60601</Zip>
@@ -113,7 +119,7 @@
     <Phone>800-241-3333</Phone>
     <Address NearestAirport="Denver Intl">
       <Number>1881</Number>
-      <Street>Curtis St</Street>
+      <Street>Curtis St</Street>
       <City>Denver</City>
       <State>CO</State>
       <Zip>80202</Zip>
@@ -125,12 +131,11 @@
     <Phone>415-394-1111</Phone>
     <Address>
       <Number>222</Number>
-      <Street>Mason St</Street>
-      <City>San Francisco</City>
+      <Street>Mason St</Street>
+      <City>San Francisco</City>
       <State>CA</State>
       <Zip>94102</Zip>
     </Address>
   </Hotel>
 
 </Hotel>
-
